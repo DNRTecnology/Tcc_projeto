@@ -44,12 +44,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-    background-image: url('/Tcc_projeto/img/fotoperfil.png');
-=======
-    background-image: url('img/fotoperfil.png');
->>>>>>> f29edee (Atualização a partir do computador de casa)
-    background-size: cover;
+    <<<<<<< HEAD background-image: url('/Tcc_projeto/img/fotoperfil.png');
+    =======background-image: url('img/fotoperfil.png');
+    >>>>>>>f29edee (Atualização a partir do computador de casa) background-size: cover;
     background-position: center;
     color: white;
 
@@ -113,8 +110,7 @@
 
 }
 
-<<<<<<< HEAD
-=======
+/* Imagens do Projeto*/
 .project-item-image-1 {
     background-image: url(img/project-1.jpg);
     width: 300px;
@@ -154,7 +150,7 @@
 
 }
 
->>>>>>> f29edee (Atualização a partir do computador de casa)
+/* Textos do Projeto*/
 .project-text {
     margin-left: 50px;
     max-width: 600px;
