@@ -44,8 +44,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/Tcc_projeto/img/fotoperfil.png');
-    background-size: cover;
+    <<<<<<< HEAD background-image: url('/Tcc_projeto/img/fotoperfil.png');
+    =======background-image: url('img/fotoperfil.png');
+    >>>>>>>f29edee (Atualização a partir do computador de casa) background-size: cover;
     background-position: center;
     color: white;
 
@@ -109,6 +110,47 @@
 
 }
 
+/* Imagens do Projeto*/
+.project-item-image-1 {
+    background-image: url(img/project-1.jpg);
+    width: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+.project-item-image-2 {
+    background-image: url(img/project-2.jpg);
+    width: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-item-image-3 {
+    background-image: url(img/project-3.jpg);
+    width: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-item-image-4 {
+    background-image: url(img/project-4.jpg);
+    width: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Textos do Projeto*/
 .project-text {
     margin-left: 50px;
     max-width: 600px;
