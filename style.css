@@ -1,19 +1,23 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-/*Navbar*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
 .navbar-container {
     width: 100%;
     display: flex;
-    padding-top: 10px;
-    padding: 20px;
     justify-content: flex-end;
-    background-color: rgb(0, 0, 0, 0.6);
-    box-shadow: 0px, 0px, 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 0;
 }
@@ -37,20 +41,19 @@
     cursor: pointer;
 }
 
-/* Show case*/
+/* Showcase */
 .showcase-container {
-    height: 280vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    <<<<<<< HEAD background-image: url('/Tcc_projeto/img/fotoperfil.png');
-    =======background-image: url('img/fotoperfil.png');
-    >>>>>>>f29edee (Atualização a partir do computador de casa) background-size: cover;
-    background-position: center;
     color: white;
+    background-image: url("./img/perfil.jpg");
+    background-size: cover;
+    background-position: center;
 
-    /* Overlay*/
+    /* Overlay */
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color;
 }
@@ -60,7 +63,7 @@
     font-size: 4rem;
 }
 
-.showcase-container>p {
+.showcase-container p {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.25rem;
@@ -72,28 +75,81 @@
     letter-spacing: 0.15rem;
 }
 
-/*About-me*/
+/* SOBRE MIM */
 .about-me-content {
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
 
-.about-me-content>img {
+.about-me-content img {
     width: 320px;
     height: 320px;
     margin-right: 50px;
 }
 
-.about-me-content>p {
-    color: #fff;
+.about-me-content p {
+    color: white;
     line-height: 2rem;
 }
 
-/* Projetos */
+/* HABILIDADES */
+.skills-content {
+    margin-top: 108px;
+    display: flex;
+    justify-content: space-between;
+}
 
-.project-content {
+.skill-item {
+    background-color: #202020;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content .skill-item:nth-child(2) {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.skill-item span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+.skill-item p {
+    color: white;
+    opacity: 75%;
+}
+
+/* Projetos */
+.projects-content {
     margin-top: 118px;
+}
+
+.projects-content .project-item:nth-child(2),
+.projects-content .project-item:nth-child(4) {
+    justify-content: flex-end;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+.projects-content .project-item:nth-child(2)>.project-item-image,
+.projects-content .project-item:nth-child(4)>.project-item-image {
+    order: 2;
+    margin-left: 50px;
+}
+
+.projects-content .project-item:nth-child(2)>.project-text,
+.projects-content .project-item:nth-child(4)>.project-text {
+    order: 1;
 }
 
 .project-item {
@@ -105,108 +161,82 @@
 .project-item>img {
     width: 300px;
     height: 300px;
-    box-shadow: ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-
 }
 
-/* Imagens do Projeto*/
-.project-item-image-1 {
-    background-image: url(img/project-1.jpg);
+.project-item-image {
     width: 300px;
-    min-height: 300px;
+    height: 300px;
     background-size: cover;
-    background-position: center;
-
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 
-
-
-.project-item-image-2 {
-    background-image: url(img/project-2.jpg);
-    width: 300px;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-
+.project-item-1 {
+    background-image: url("img/project-1.jpg");
+    margin-left: 50px;
 }
 
-.project-item-image-3 {
-    background-image: url(img/project-3.jpg);
-    width: 300px;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-
+.project-item-2 {
+    background-image: url("img/project-2.jpg");
 }
 
-.project-item-image-4 {
-    background-image: url(img/project-4.jpg);
-    width: 300px;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-
+.project-item-3 {
+    background-image: url("img/project-3.jpg");
 }
 
-/* Textos do Projeto*/
+.project-item-4 {
+    background-image: url("img/project-4.jpg");
+    background-position: center;
+}
+
 .project-text {
     margin-left: 50px;
     max-width: 600px;
-
 }
 
-.project-text>h3 {
-    color: #fff;
+.project-item p {
+    color: white;
+    opacity: 75%;
+    line-height: 29px;
+}
+
+.project-item h3 {
+    color: white;
     font-size: 2.25rem;
     font-weight: 500;
 }
 
-.project-text>p {
-    color: #fff;
-    opacity: 75%;
-    line-height: 29px;
-
-}
-
-/*Habilidades*/
-.skill-content {
-    margin-top: 108px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill-item {
-    background-color: #202020;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
+/* Formulário */
+.contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.skill-content .skill-item:nth-child(2) {
-    margin-left: 50px;
-    margin-right: 50px;
+.contact-form .form-input {
+    margin-bottom: 20px;
 }
 
-.skill-item>span {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #eee;
-    font-weight: 500;
+.footer-container {
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
 }
 
-.skill-item>p {
-    color: #eee;
-    opacity: 75%;
+.footer-container .social-items a {
+    margin-right: 25px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-/*Utilites*/
+/* Utilities */
 .section-container {
     width: 100%;
     background-color: #111;
@@ -234,3 +264,31 @@
     width: fit-content;
     margin: auto;
 }
+
+/*
+
+.form-input {
+    border: none;
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    resize: none;
+}
+
+.form-input:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-button {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form-button:hover {
+    cursor: pointer; }*/
